@@ -82,7 +82,7 @@ let appData = {
 };
 
 for (let key in appData) {
-	console.log("Можливості отримання додаткового прибутку: " + key + " - " + appData[key]);
+	console.log("Возможности отримання додаткового прибутку: " + key + " - " + appData[key]);
 	}
 
 
