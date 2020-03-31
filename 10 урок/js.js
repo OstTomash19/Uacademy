@@ -1,48 +1,74 @@
+'use strict';
+// let options = {
+//     width: 1024,
+//     height: 1024,
+//     name: "test"
+// };
 
-
-if(num < 49){
-    console.log("не верно")
-} else if(num > 100){
-    console.log("Mnogovato");
-} else {
-    console.log("Верно");
-};
-
-(num==50) ? console.log("верно") : console.log("не Верно");
-
-switch(num) {
-    case num < 49:
-        console.log("не верно");
-        break;
-    case num > 100:
-        console.log("Mnogovato");
-        break;
-    case num >80:
-        console.log("vseodno bagato");
-        break;
-    case 50:
-        console.log("Verno");
-        break;
-    default:
-        console.log("chto-to poshlo ne tak");
-        break;
-}
-
-let num = 50;
-// while(num < 55){
-//     console.log(num);
-//     num++;   
+// console.log(options.name);
+// options.bool = false;
+// options.color = {
+//     border: "black",
+//     background: "red"
 // }
 
-do{
-    console.log(num);
-    num++;
-} 
-while (num < 55);
+// delete options.bool;
 
-for(let i = 1; i < 8; i++) {
-    if(i==6){
-        continue;
-    }
-    console.log(i);
+// console.log(options);
+
+// for (let key in options) {
+//     console.log("Свойство " + key + " имеет значение " + options[key]);
+// }
+// console.log(Object.keys(options).length);
+
+// let arr = ["first", 2, 3, "four", 5];
+
+
+// // for(let i = 0; i < arr.length; i++) {
+// //     console.log(arr[i]);
+// // }
+// arr.forEach(function(item, i, mass){
+//     console.log(i + ": " + item + " (массив: " + mass + ")");
+// })
+
+// console.log(arr);
+
+// let mass = [1, 3, 4, 6, 7];
+
+// for (let key of mass) {
+//     console.log(key);
+// }
+
+// let ans = prompt("", ""),
+//     arr = [];
+
+// arr = ans.split(",");
+// console.log(arr);
+
+// let arr = ["afsgfs", "afgtuuu", "qwert", "cnbubt"],
+//     i = arr.join(", ");
+
+// console.log(i);
+
+let arr = [1, 15, 4],
+    i = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a-b;
 }
+
+console.log(arr);
+
+let soldier = {
+    health : 400,
+    armor : 100
+}; 
+
+let john = {
+    health: 100
+};
+
+john.__proto__ = soldier;
+
+console.log(john);
+console.log(john.armor);
